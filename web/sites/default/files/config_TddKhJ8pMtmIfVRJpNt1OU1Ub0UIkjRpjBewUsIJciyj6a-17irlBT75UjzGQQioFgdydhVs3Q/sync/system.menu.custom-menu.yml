@@ -1,0 +1,8 @@
+uuid: bf1385f5-1e7a-4b63-9e09-54e51ff541ad
+langcode: en
+status: true
+dependencies: {  }
+id: custom-menu
+label: 'Custom Menu'
+description: 'Admin Custom menu'
+locked: false

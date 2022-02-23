@@ -1,0 +1,9 @@
+.page-wrapper, .container {
+  max-width: initial;
+}
+
+@media (min-width: 75rem) {
+body:not(.is-always-mobile-nav) .header-nav {
+  height: 9.75rem;
+}
+}

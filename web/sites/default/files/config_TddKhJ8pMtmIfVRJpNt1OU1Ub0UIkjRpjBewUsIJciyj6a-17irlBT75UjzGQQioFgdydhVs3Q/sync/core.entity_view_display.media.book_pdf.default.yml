@@ -1,0 +1,27 @@
+uuid: 78dc151a-dc84-449d-9ce1-d075d3fe0ada
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.book_pdf.field_media_document
+    - media.type.book_pdf
+  module:
+    - file
+id: media.book_pdf.default
+targetEntityType: media
+bundle: book_pdf
+mode: default
+content:
+  field_media_document:
+    type: file_url_plain
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

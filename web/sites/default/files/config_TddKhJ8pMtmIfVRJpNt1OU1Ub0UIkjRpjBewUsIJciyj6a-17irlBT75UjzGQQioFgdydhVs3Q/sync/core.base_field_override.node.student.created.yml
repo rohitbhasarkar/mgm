@@ -1,0 +1,18 @@
+uuid: ef3d5dea-85e9-45df-bf74-b8b936ced504
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.student
+id: node.student.created
+field_name: created
+entity_type: node
+bundle: student
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

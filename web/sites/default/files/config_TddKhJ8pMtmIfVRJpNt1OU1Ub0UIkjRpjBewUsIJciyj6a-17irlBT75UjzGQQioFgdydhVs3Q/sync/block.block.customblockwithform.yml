@@ -1,0 +1,21 @@
+uuid: 11e6529a-8839-473c-b5f7-486a79b79f26
+langcode: en
+status: true
+dependencies:
+  module:
+    - student
+  theme:
+    - bartik
+id: customblockwithform
+theme: bartik
+region: sidebar_first
+weight: -6
+provider: null
+plugin: student_block
+settings:
+  id: student_block
+  label: 'Custom Block with form'
+  label_display: visible
+  provider: student
+  student_block_settings: null
+visibility: {  }

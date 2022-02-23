@@ -1,0 +1,28 @@
+uuid: 6e07af37-739d-4d65-9863-f6fbec3c41e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.book_pdf.field_media_document
+    - media.type.book_pdf
+id: media.book_pdf.media_library
+targetEntityType: media
+bundle: book_pdf
+mode: media_library
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_document: true
+  langcode: true
+  path: true
+  status: true
+  uid: true

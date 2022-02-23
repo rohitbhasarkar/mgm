@@ -1,0 +1,18 @@
+display:
+  page:
+    display_options:
+      fields:
+        delete_media:
+          text: मिटायें
+  widget:
+    display_options:
+      arguments:
+        bundle:
+          exception:
+            title: सभी
+  widget_table:
+    display_options:
+      arguments:
+        bundle:
+          exception:
+            title: सभी

@@ -1,0 +1,8 @@
+uuid: ad0beb0f-7061-4c05-a938-6f832ad1cf84
+langcode: en
+status: true
+dependencies: {  }
+name: City
+vid: city
+description: 'All about cities '
+weight: 0

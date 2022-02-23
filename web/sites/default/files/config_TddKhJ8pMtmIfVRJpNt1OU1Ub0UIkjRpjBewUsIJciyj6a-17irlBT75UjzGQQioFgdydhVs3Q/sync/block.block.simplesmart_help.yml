@@ -1,0 +1,22 @@
+uuid: 02657fac-b15b-42e6-8d0f-ea1d5395f68b
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - simplesmart
+_core:
+  default_config_hash: '-laWx8WA-ikiIEH3NJQ0hVbjqk3iEuBms91LB0B4IQU'
+id: simplesmart_help
+theme: simplesmart
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

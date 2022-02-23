@@ -1,0 +1,8 @@
+uuid: c2b02dbc-49e1-420c-8b0d-3a9f31b02f9e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Dish Type'
+vid: dish_type
+description: ''
+weight: 0

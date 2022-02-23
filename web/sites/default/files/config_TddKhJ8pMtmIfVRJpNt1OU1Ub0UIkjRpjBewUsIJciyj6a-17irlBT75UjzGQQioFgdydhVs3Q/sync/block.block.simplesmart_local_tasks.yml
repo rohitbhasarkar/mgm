@@ -1,0 +1,22 @@
+uuid: bb99f26e-ed8a-43ea-8979-02f88b7dd8f6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - simplesmart
+_core:
+  default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
+id: simplesmart_local_tasks
+theme: simplesmart
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

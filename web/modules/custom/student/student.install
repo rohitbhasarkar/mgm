@@ -1,0 +1,138 @@
+<?php
+
+use Drupal\Core\Database\Database;
+
+/**
+ * Implements hook_schema().
+ */
+function student_schema() {
+  $schema['students'] = array(
+    'description' => 'The table for storing the students data.',
+    'fields' => array(
+      'id' => array(
+        'description' => 'The primary identifier for student',
+        'type' => 'serial',
+        'not null' => TRUE,
+        'unsigned' => TRUE,
+      ),
+      'candidate_name' => array(
+        'description' => 'Candidate name',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'email_id' => array(
+        'description' => 'Email ID',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'mobile_number' => array(
+        'description' => 'Mobile number of student',
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+      ),
+      'dob' => array(
+        'description' => 'Date of Birth',
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+      ),
+      'gender' => array(
+        'description' => 'Gender',
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+      ),
+      'address' => array(
+        'description' => 'Address of Student',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ),
+      'eighteen_old' => array(
+        'description' => '18 Years Old',
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+      ),
+      'copy_status' => array(
+        'description' => 'Send copy of application',
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+      ),
+    ),
+    'primary key' => array('id'),
+  );
+  return $schema;
+}
+
+function student_update_7100() {
+  $schema['students'] = array(
+    'description' => 'The table for storing the students data.',
+    'fields' => array(
+      'id' => array(
+        'description' => 'The primary identifier for student',
+        'type' => 'serial',
+        'not null' => TRUE,
+        'unsigned' => TRUE,
+      ),
+      'candidate_name' => array(
+        'description' => 'Candidate name',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'email_id' => array(
+        'description' => 'Email ID',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'mobile_number' => array(
+        'description' => 'Mobile number of student',
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+      ),
+      'dob' => array(
+        'description' => 'Date of Birth',
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+      ),
+      'gender' => array(
+        'description' => 'Gender',
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+      ),
+      'address' => array(
+        'description' => 'Address of Student',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ),
+      'eighteen_old' => array(
+        'description' => '18 Years Old',
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+      ),
+      'copy_status' => array(
+        'description' => 'Send copy of application',
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+      ),
+    ),
+    'primary key' => array('id'),
+  );
+  return $schema;
+}

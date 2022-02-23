@@ -1,0 +1,11 @@
+uuid: 213cd34a-2dcf-4f81-aca8-69e2c675cfc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.book_pdf
+id: media.book_pdf
+target_entity_type_id: media
+target_bundle: book_pdf
+default_langcode: site_default
+language_alterable: false

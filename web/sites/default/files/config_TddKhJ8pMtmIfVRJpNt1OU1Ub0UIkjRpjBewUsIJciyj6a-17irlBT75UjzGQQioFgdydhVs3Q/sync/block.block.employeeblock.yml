@@ -1,0 +1,21 @@
+uuid: 2d0c8ca7-8d88-4efa-822f-c2212138c396
+langcode: en
+status: true
+dependencies:
+  module:
+    - employee
+  theme:
+    - bartik
+id: employeeblock
+theme: bartik
+region: sidebar_first
+weight: -8
+provider: null
+plugin: employee_block
+settings:
+  id: employee_block
+  label: 'Employee Block'
+  label_display: visible
+  provider: employee
+  employee_block_settings: null
+visibility: {  }

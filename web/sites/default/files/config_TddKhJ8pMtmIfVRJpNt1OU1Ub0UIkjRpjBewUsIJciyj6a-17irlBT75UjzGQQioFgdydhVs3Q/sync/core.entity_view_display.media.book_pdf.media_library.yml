@@ -1,0 +1,31 @@
+uuid: f9cfb24e-9624-4ca2-90e1-5c3e13c5bce0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.book_pdf.field_media_document
+    - image.style.medium
+    - media.type.book_pdf
+  module:
+    - image
+id: media.book_pdf.media_library
+targetEntityType: media
+bundle: book_pdf
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_document: true
+  langcode: true
+  name: true
+  uid: true

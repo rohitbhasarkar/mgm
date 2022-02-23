@@ -1,0 +1,25 @@
+uuid: ff47f303-6d55-4f42-a3db-731fc9f0e4e5
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.recipes_dashboard
+  module:
+    - views
+  theme:
+    - olivero
+id: views_block__recipes_dashboard_recipe_dashboard_block
+theme: olivero
+region: sidebar
+weight: -6
+provider: null
+plugin: 'views_block:recipes_dashboard-recipe_dashboard_block'
+settings:
+  id: 'views_block:recipes_dashboard-recipe_dashboard_block'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility: {  }

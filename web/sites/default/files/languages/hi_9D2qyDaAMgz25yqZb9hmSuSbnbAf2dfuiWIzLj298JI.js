@@ -1,0 +1,1 @@
+window.drupalTranslations = {"strings":{"":{"Restricted to certain pages":"\u0915\u0941\u091b \u092a\u0928\u094d\u0928\u094b\u0902 \u0915\u0947 \u0932\u093f\u090f \u092a\u094d\u0930\u0924\u093f\u092c\u0902\u0927\u093f\u0924","Not restricted":"\u092a\u094d\u0930\u0924\u093f\u092c\u0902\u0927\u093f\u0924 \u0928\u0939\u0940\u0902"}},"pluralFormula":{"1":0,"default":1}};

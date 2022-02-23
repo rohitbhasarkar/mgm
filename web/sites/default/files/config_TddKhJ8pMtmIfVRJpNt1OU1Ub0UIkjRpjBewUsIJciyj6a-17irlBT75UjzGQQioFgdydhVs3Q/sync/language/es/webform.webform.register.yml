@@ -1,0 +1,31 @@
+title: Registrarse
+description: "<pre data-placeholder=\"Translation\" dir=\"ltr\" id=\"tw-target-text\">\r\n&iexcl;Reg&iacute;strese en este oc&eacute;ano de conocimiento!\r\n</pre>\r\n<img alt=\"Community-verified icon\" data-atf=\"0\" data-frt=\"0\" height=\"16\" id=\"dimg_19\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAABDUlEQVR4AYXRgUZDYRjH4TegFTKgpEqiFJgoWAoMEQGBgBboChaaAKxLKAhAhQqAdAmpBIQolkCFqp2nITvNKXuA7+/Hhzey5OWjE4Nq3rzY1f9/NGHPB549492+8Ww060iCS2XdctZdI3GsECmb+HJoIX6x6EgDm+lURTH+YB7V9nAqE5WNme4YKuOiY6iMe6PaQxUUIuTbswgFVNJwA8sO3Bn6yR6bWZMSNtJwDtuWfHpQxaPx9C9zadil7jrCigbq6UXceNIVKTWUIqypm2ytJdTiNyNeXclF6GttOVfeDEc7qzjR23r3OMFqZKng1kw0mXGLrfibHTScOZWgGv9TdC6ROFeMTgwYiIxvJzMRWQbeGZUAAAAASUVORK5CYII=\" width=\"16\" />"
+elements: |
+  your_full_name:
+    '#title': 'Tu nombre completo'
+    '#description': "<pre data-placeholder=\"Translation\" dir=\"ltr\" id=\"tw-target-text\">\r\nIngrese su nombre completo.</pre>\r\n\r\n<pre data-placeholder=\"\" dir=\"ltr\" id=\"tw-target-rmn\">\r\n\r\n&nbsp;</pre>\r\n<br />\r\n<img alt=\"Community-verified icon\" data-atf=\"0\" data-frt=\"0\" height=\"16\" id=\"dimg_19\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAABDUlEQVR4AYXRgUZDYRjH4TegFTKgpEqiFJgoWAoMEQGBgBboChaaAKxLKAhAhQqAdAmpBIQolkCFqp2nITvNKXuA7+/Hhzey5OWjE4Nq3rzY1f9/NGHPB549492+8Ww060iCS2XdctZdI3GsECmb+HJoIX6x6EgDm+lURTH+YB7V9nAqE5WNme4YKuOiY6iMe6PaQxUUIuTbswgFVNJwA8sO3Bn6yR6bWZMSNtJwDtuWfHpQxaPx9C9zadil7jrCigbq6UXceNIVKTWUIqypm2ytJdTiNyNeXclF6GttOVfeDEc7qzjR23r3OMFqZKng1kw0mXGLrfibHTScOZWgGv9TdC6ROFeMTgwYiIxvJzMRWQbeGZUAAAAASUVORK5CYII=\" width=\"16\" />"
+    '#placeholder': 'Tu nombre'
+    '#required_error': 'Requerido Tu Nombre'
+  email_address:
+    '#title': 'Dirección de correo electrónico'
+    '#description': "<pre data-placeholder=\"Translation\" dir=\"ltr\" id=\"tw-target-text\">\r\nTu correo electr&oacute;nico\r\n</pre>"
+    '#placeholder': 'Dirección de correo electrónico'
+    '#required_error': 'Dirección de correo electrónico requerida'
+  gender:
+    '#title': Género
+    '#options':
+      m: Masculino
+      f: Mujer
+      o: Otra
+    '#required_error': 'Seleccione género'
+  your_address:
+    '#title': 'Su dirección'
+    '#address__placeholder': 'Su dirección'
+    '#address__title': 'Habla a'
+    '#address_2__title': 'Dirección 2'
+    '#city__title': Ciudad/Pueblo
+    '#state_province__title': 'Provincia del estado'
+    '#postal_code__title': 'Código postal/ZIP'
+    '#country__title': País
+  age:
+    '#title': Envejecer

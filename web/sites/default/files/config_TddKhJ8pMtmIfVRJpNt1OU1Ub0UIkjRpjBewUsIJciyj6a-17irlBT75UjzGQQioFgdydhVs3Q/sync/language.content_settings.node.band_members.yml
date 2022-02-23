@@ -1,0 +1,11 @@
+uuid: 300b91d6-6233-4b3a-81a9-ecd21e30ff19
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.band_members
+id: node.band_members
+target_entity_type_id: node
+target_bundle: band_members
+default_langcode: site_default
+language_alterable: false

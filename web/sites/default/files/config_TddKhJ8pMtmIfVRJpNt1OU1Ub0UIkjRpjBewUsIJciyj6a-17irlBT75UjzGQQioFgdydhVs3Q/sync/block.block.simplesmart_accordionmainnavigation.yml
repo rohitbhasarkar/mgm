@@ -1,0 +1,22 @@
+uuid: 64a7efc6-be1c-4406-aad1-20447266de00
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - accordion_menus
+  theme:
+    - simplesmart
+id: simplesmart_accordionmainnavigation
+theme: simplesmart
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'accordion_menus_block:main'
+settings:
+  id: 'accordion_menus_block:main'
+  label: 'Accordion Main navigation'
+  label_display: '0'
+  provider: accordion_menus
+visibility: {  }

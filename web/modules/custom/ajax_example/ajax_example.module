@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * Implements hook_form_alter().
+ * @param $form
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ * @param $form_id
+ */
+function ajax_example_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'ajax_example_calculator_form') {
+    $form['#attached']['library'][] = 'ajax_example/ajax_example_dialog';
+  }
+}
+
+/**
+ * Implements hook_theme().
+ * @param $existing
+ * @param $type
+ * @param $theme
+ * @param $path
+ * @return array
+ */
+function ajax_example_theme($existing, $type, $theme, $path) {
+  return [
+    'ajax_example_template' => [
+      'variables' => ['test_var' => NULL],
+      'template' => 'ajax-example-template',
+    ],
+    'my_template_file' => [
+      'variables' => ['title' => NULL,
+        'items' => NULL,
+        'body' => NULL,
+      ],
+      'template' => 'my-template-file',
+    ],
+    'my_second_template_file' => [
+      'variables' => [
+        'test_var' => NULL,
+        'title' => NULL,
+      ],
+      'template' => 'simple\my-second-template-file',
+    ],
+  ];
+}

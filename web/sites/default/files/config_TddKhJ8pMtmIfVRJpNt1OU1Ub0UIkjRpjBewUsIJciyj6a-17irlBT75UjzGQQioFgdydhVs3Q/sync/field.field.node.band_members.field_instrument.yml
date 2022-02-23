@@ -1,0 +1,19 @@
+uuid: 3652e911-bd80-42f4-8c2b-2bc37b85026c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_instrument
+    - node.type.band_members
+id: node.band_members.field_instrument
+field_name: field_instrument
+entity_type: node
+bundle: band_members
+label: 'Instrument Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

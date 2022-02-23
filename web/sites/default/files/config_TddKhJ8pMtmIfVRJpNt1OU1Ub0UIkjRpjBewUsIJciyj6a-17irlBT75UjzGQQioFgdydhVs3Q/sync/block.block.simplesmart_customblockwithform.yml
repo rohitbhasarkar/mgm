@@ -1,0 +1,21 @@
+uuid: 5db029c2-8945-4849-8297-905dfd61312b
+langcode: en
+status: false
+dependencies:
+  module:
+    - student
+  theme:
+    - simplesmart
+id: simplesmart_customblockwithform
+theme: simplesmart
+region: header
+weight: -6
+provider: null
+plugin: student_block
+settings:
+  id: student_block
+  label: 'Custom Block with form'
+  label_display: visible
+  provider: student
+  student_block_settings: null
+visibility: {  }

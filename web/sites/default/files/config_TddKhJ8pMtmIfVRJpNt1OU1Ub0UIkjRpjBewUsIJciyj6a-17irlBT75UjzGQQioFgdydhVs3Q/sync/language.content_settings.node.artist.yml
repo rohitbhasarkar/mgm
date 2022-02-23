@@ -1,0 +1,11 @@
+uuid: 18b5f638-5255-4354-825d-71270e8fd0e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.artist
+id: node.artist
+target_entity_type_id: node
+target_bundle: artist
+default_langcode: site_default
+language_alterable: false

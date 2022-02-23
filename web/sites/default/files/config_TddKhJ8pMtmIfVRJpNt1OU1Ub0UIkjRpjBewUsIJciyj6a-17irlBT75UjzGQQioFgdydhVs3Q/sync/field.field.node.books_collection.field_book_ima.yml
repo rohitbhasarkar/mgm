@@ -1,0 +1,38 @@
+uuid: 7f1530e9-9d66-46a8-87fb-189841151e45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_book_ima
+    - node.type.books_collection
+  module:
+    - image
+id: node.books_collection.field_book_ima
+field_name: field_book_ima
+entity_type: node
+bundle: books_collection
+label: 'Book Image'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

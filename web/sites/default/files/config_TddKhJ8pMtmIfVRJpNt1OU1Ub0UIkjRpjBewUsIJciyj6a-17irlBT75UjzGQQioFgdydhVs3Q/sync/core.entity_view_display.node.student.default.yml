@@ -1,0 +1,38 @@
+uuid: bd48b0db-119b-443f-956a-68f9b58013dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.student.body
+    - field.field.node.student.field_address
+    - node.type.student
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: y7fYv4j576MRnujcCm2d-vzK1cnQDpZKvm4Toy9kVlg
+id: node.student.default
+targetEntityType: node
+bundle: student
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_address:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

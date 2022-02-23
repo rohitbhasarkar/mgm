@@ -1,0 +1,18 @@
+ajax_example_dialog:
+  version: 1.x
+  css:
+    theme:
+      css/mycss.css: {}
+      css/animate.min.css: {}
+  js:
+    js/myjs.js: {}
+  dependencies:
+  - core/jquery #Just to be safe
+  - core/drupal.dialog.ajax #Required for dialogs
+  - core/jquery.form #If you also want to use Ajax for form operations
+
+hero-style:
+  version: 1.x
+  css:
+    theme:
+      css/animate.min.css: {}

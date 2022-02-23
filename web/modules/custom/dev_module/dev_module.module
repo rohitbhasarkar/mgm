@@ -1,0 +1,88 @@
+<?php
+
+use Drupal\Component\Utility\Environment;
+use Drupal\Component\Utility\NestedArray;
+use Drupal\Core\Datetime\Entity\DateFormat;
+use Drupal\Core\Entity\EntityStorageInterface;
+use Drupal\Core\Field\FieldDefinitionInterface;
+use Drupal\Core\File\Event\FileUploadSanitizeNameEvent;
+use Drupal\Core\File\Exception\FileException;
+use Drupal\Core\File\Exception\FileExistsException;
+use Drupal\Core\File\Exception\FileWriteException;
+use Drupal\Core\File\Exception\InvalidStreamWrapperException;
+use Drupal\Core\File\FileSystemInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Link;
+use Drupal\Core\Messenger\MessengerInterface;
+use Drupal\Core\Render\BubbleableMetadata;
+use Drupal\Core\Render\Element;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Template\Attribute;
+use Drupal\Core\Url;
+use Drupal\file\Entity\File;
+use Drupal\file\FileInterface;
+use Drupal\file\Upload\FileValidationException;
+use Drupal\file\Upload\FormUploadedFile;
+use Symfony\Component\HttpFoundation\File\Exception\FileException as SymfonyFileException;
+use Symfony\Component\HttpFoundation\File\Exception\FormSizeFileException;
+use Symfony\Component\HttpFoundation\File\Exception\IniSizeFileException;
+use Symfony\Component\HttpFoundation\File\Exception\NoFileException;
+use Symfony\Component\HttpFoundation\File\Exception\PartialFileException;
+use Symfony\Component\Mime\MimeTypeGuesserInterface;
+
+function dev_module_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == "dev_module_field_form") {
+    $form['my_message'] = [
+      '#type' => 'textarea',
+    ];
+  }
+
+  if ($form_id == "node_student_form") {
+    $form['terms_of_use1'] = array(
+      '#type' => 'checkbox',
+      '#title' => t("Hook form alter checkbox."),
+      '#required' => TRUE,
+    );
+  }
+}
+
+function hook_form_node_student_form_alter(&$form, &$form_state, $form_id) {
+
+  // Modification for the form with the given form ID goes here. For example, if
+  // FORM_ID is "user_register_form" this code would run only on the user
+  // registration form.
+  // Add a checkbox to registration form about agreeing to terms of use.
+  $form['terms_of_use'] = array(
+    '#type' => 'checkbox',
+    '#title' => t("Hook form alter form id checkbox."),
+    '#required' => TRUE,
+  );
+  // \Drupal::messenger()->addMessage(t($form_id));
+//  if ($form_id == "node_student_form") {
+////    $form['field_address']['#access'] = FALSE;
+//    $form['field_address'] = [
+//      '#title' => t('Address'),
+//      '#type' => 'textarea',
+//      '#rows' => 10,
+//      '#cols' => 60,
+//      '#resizable' => TRUE,
+//    ];
+//  }
+}
+
+/**
+ * Implements hook_theme().
+ * @param $existing
+ * @param $type
+ * @param $theme
+ * @param $path
+ * @return array
+ */
+function dev_module_theme($existing, $type, $theme, $path) {
+  return [
+    'my_demo_template' => [
+      'variables' => ['curr_string' => NULL],
+      'template' => 'my-demo-template',
+    ],
+  ];
+}

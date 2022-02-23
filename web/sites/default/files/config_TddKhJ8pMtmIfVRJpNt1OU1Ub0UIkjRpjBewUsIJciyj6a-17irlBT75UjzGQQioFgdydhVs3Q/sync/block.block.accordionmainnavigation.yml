@@ -1,0 +1,22 @@
+uuid: e5a39721-67c0-4ac0-89d2-071eb81c0c74
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - accordion_menus
+  theme:
+    - bartik
+id: accordionmainnavigation
+theme: bartik
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'accordion_menus_block:main'
+settings:
+  id: 'accordion_menus_block:main'
+  label: 'Accordion Main navigation'
+  label_display: '0'
+  provider: accordion_menus
+visibility: {  }

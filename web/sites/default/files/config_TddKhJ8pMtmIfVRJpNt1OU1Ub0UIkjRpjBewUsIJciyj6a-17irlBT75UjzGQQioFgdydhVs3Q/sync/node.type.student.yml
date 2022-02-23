@@ -1,0 +1,16 @@
+uuid: bca39d93-0fdb-4c3d-991c-0578a9bffc48
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - student
+_core:
+  default_config_hash: NBj8p9O8lyHj5KUnoFokt03VcaMN6k5uoDR3WZ1diTE
+name: 'Student Detail'
+type: student
+description: 'Content type that can be used to add <em>Student information</em> page.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

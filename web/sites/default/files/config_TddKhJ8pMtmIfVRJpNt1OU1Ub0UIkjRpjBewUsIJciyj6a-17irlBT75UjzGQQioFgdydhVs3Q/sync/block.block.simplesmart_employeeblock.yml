@@ -1,0 +1,21 @@
+uuid: 5234c8e5-e0ef-44e4-896d-9250dd015906
+langcode: en
+status: false
+dependencies:
+  module:
+    - employee
+  theme:
+    - simplesmart
+id: simplesmart_employeeblock
+theme: simplesmart
+region: header
+weight: -7
+provider: null
+plugin: employee_block
+settings:
+  id: employee_block
+  label: 'Employee Block'
+  label_display: visible
+  provider: employee
+  employee_block_settings: null
+visibility: {  }

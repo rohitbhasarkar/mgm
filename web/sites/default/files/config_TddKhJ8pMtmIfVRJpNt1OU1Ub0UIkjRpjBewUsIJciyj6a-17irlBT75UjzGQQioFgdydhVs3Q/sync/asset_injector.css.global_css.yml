@@ -1,0 +1,21 @@
+uuid: fd6bdff6-0b82-4b52-baa2-2241dc513e54
+langcode: en
+status: true
+dependencies: {  }
+id: global_css
+label: 'Global CSS'
+code: |-
+  .page-wrapper, .container {
+    max-width: initial;
+  }
+
+  @media (min-width: 75rem) {
+  body:not(.is-always-mobile-nav) .header-nav {
+    height: 9.75rem;
+  }
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

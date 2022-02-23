@@ -1,0 +1,26 @@
+{{ attach_library('ajax_example/hero-style') }}
+
+<strong>This is coming from our custom twig file</strong>
+<h4 class="animate__animated animate__rubberBand">1. {% trans %}Page{% endtrans %}</h4>
+<h3 class="animate__animated">2. {{ title|capitalize }}</h3>
+<h1>3. {{ 'now'|date('d/m/yy') }}</h1>
+<h4 class="animate__animated">4. {% filter upper %}{{ title|capitalize }}{% endfilter %}</h4>
+<h4 class="animate__animated">5. {{ body|trim }}</h4>
+<h4 class="animate__animated">6. {{ 200.35|number_format }}</h4>
+<h4 class="animate__animated">7. {{ 9800.333|number_format(2, '.', ',') }}</h4>
+
+<h4 class="animate__animated">8. {{ -9800.333|number_format(2, '.', ',') }}</h4>{# outputs : -9 #}
+<h4 class="animate__animated">9. {{ (-9800.333)|number_format(2, '.', ',') }}</h4>{# outputs : -9,800.33 #}
+<h4 class="animate__animated">10. {{  1 + 0.2|number_format(2) }}</h4>{# outputs : 1.2 #}
+<h4 class="animate__animated">11. {{ (1 + 0.2)|number_format(2) }}</h4> {# outputs : 1.20 #}
+
+<ol>
+  {% for item in items %}
+    <li class="animate__animated {{ random(['animate__heartBeat', 'animate__bounce', 'animate__flash', 'animate__tada', 'animate__wobble', 'animate__swing' , 'animate__flip'])}}">{{ item }}</li>
+  {% endfor %}
+</ol>
+
+
+{% foreach items in item %}
+{{ item }}
+{% endforeach %}

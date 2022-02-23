@@ -1,0 +1,33 @@
+uuid: 3aab9be6-cd0b-4f9a-9892-14c292104b66
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.student.body
+    - field.field.node.student.field_address
+    - node.type.student
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: akuPrdgy7aqwVEo-GgNgNHiNPQ4KGzum5jP_cH8NiOY
+id: node.student.teaser
+targetEntityType: node
+bundle: student
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_address: true
+  langcode: true

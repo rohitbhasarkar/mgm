@@ -1,0 +1,20 @@
+uuid: 08e4c6f9-578c-439f-934e-30de6b2b2044
+langcode: en
+status: true
+dependencies:
+  theme:
+    - simplesmart
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: simplesmart_page_title
+theme: simplesmart
+region: content
+weight: -8
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

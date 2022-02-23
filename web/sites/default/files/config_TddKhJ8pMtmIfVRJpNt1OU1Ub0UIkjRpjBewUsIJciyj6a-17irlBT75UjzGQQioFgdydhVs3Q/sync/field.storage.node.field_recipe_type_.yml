@@ -1,0 +1,20 @@
+uuid: 2ab0aa09-12f7-4349-b6eb-09314b87e6f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_recipe_type_
+field_name: field_recipe_type_
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

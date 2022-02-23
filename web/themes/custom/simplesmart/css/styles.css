@@ -1,0 +1,78 @@
+body {
+  /*font-family: "Pacifico";*/
+  /*font-family: 'Lato', sans-serif;*/
+  font-family: 'Supermercado One', cursive;
+  /*font-family: 'Quintessential', cursive;*/
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#simplesmartmenu ul.menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.layout-container {
+  width: 100%;
+  max-width: unset;
+}
+
+/*.header.region {*/
+  /*padding: 5px;*/
+/*}*/
+
+/*.header.region-branding {*/
+  /*flex: 0 1 20%;*/
+/*}*/
+
+/*.header.region-navigation {*/
+  /*flex: 0 1 50%;*/
+/*}*/
+
+/*.header.region-search {*/
+  /*flex: 0 1 30%;*/
+/*}*/
+
+/*.region.block-region {*/
+  /*padding: 15px;*/
+/*}*/
+
+/*.featured {*/
+  /*padding: 40px 20px;*/
+  /*background-color: indianred;*/
+/*}*/
+
+main.content {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main.layout-content {
+  flex: 0 1 60%;
+}
+
+aside.layout-sidebar-first {
+  flex: 0 1 19%;
+}
+aside.layout-sidebar-second {
+  flex: 0 1 19%;
+}
+
+/*.footer--top {*/
+  /*display: flex;*/
+  /*justify-content: space-between;*/
+  /*padding: 10px;*/
+/*}*/
+
+/*.footer--top .region {*/
+  /*padding: 5px;*/
+/*}*/
+
+/*.region-footer-first, .region-footer-second, .region-footer-third {*/
+  /*flex: 0 1 30%;*/
+/*}*/

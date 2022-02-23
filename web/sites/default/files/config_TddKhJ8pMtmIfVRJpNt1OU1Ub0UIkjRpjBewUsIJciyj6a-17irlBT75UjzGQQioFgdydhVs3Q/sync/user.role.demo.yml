@@ -1,0 +1,26 @@
+uuid: 413e75f5-0296-4b45-a1a0-cbe61af659ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.car_brand
+    - node.type.page
+    - node.type.student
+    - node.type.webform
+  module:
+    - field_ui
+    - node
+    - toolbar
+id: demo
+label: demo
+weight: 4
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'administer node form display'
+  - 'create article content'
+  - 'create car_brand content'
+  - 'create page content'
+  - 'create student content'
+  - 'create webform content'

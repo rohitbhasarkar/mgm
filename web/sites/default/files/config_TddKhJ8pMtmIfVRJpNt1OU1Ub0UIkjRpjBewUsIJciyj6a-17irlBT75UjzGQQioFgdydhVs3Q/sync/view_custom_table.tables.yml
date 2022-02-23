@@ -1,0 +1,6 @@
+students:
+  table_name: students
+  table_database: default
+  description: 'Students record data'
+  column_relations: 'a:0:{}'
+  created_by: '1'

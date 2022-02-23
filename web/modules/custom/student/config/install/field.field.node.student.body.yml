@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.storage.node.body
+  - node.type.student
+  module:
+  - text
+id: node.student.body
+field_name: body
+entity_type: node
+bundle: student
+label: 'Student Detail'
+description: 'More specific information about the student.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

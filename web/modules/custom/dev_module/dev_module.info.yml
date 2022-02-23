@@ -1,0 +1,8 @@
+name: Development Module
+description: Demo Development module.
+type: module
+package: custom
+core_version_requirement: ^9
+
+libraries:
+  - dev_module/global-css

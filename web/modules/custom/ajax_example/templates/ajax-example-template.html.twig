@@ -1,0 +1,51 @@
+{{ attach_library('ajax_example/ajax_example_dialog') }}
+{#{% extends "@simplesmart/custom/ajax-example-template.html.twig" %}#}
+{#<p> This is the lotus template with a value of {{ test_var }} </p>#}
+
+{#{% block#}
+  {#{% extends "core/themes/custom/simplesmart/templates/custom/ajax-example-demo.html.twig" %}#}
+{#%}#}
+<div id="edit-description"
+     class="js-form-item form-item js-form-type-item form-type-item js-form-item-description form-item-description form-no-label">
+  Ajax Functionality without form.
+</div>
+<div class="js-form-item form-item js-form-type-number form-type-number js-form-item-value-one form-item-value-one">
+  <label for="edit-value-one" class="js-form-required form-required">1st Number</label>
+  <input data-drupal-selector="edit-value-one" aria-describedby="edit-value-one--description" type="number"
+         id="edit-value-one" name="value_one" value="" step="any" class="form-number required" required="required"
+         aria-required="true">
+
+  <div id="edit-value-one--description" class="description">
+    Enter the 1st Number.
+  </div>
+</div>
+
+{#{{ form|set( 'element.#edit-value-one.placeholder', 'Enter the Positive First Number' ) }}#}
+<div class="js-form-item form-item js-form-type-number form-type-number js-form-item-value-two form-item-value-two">
+  <label for="edit-value-two" class="js-form-required form-required">2nd Number</label>
+  <input data-drupal-selector="edit-value-two" aria-describedby="edit-value-two--description" type="number"
+         id="edit-value-two" name="value_two" value="" step="any" class="form-number required" required="required"
+         aria-required="true">
+
+  <div id="edit-value-two--description" class="description">
+    Enter the 2nd Number.
+  </div>
+</div>
+
+<div class="js-form-item form-item js-form-type-select form-type-select js-form-item-operation form-item-operation">
+  <label for="edit-operation" class="js-form-required form-required">Select Operation</label>
+  <select data-drupal-selector="edit-operation" aria-describedby="edit-operation--description" id="edit-operation"
+          name="operation" class="form-select required" required="required" aria-required="true">
+    <option value="" selected="selected">- Select -</option>
+    <option value="add">Addition (+)</option>
+    <option value="sub">Subtraction (-)</option>
+    <option value="mul">Multiplication (*)</option>
+    <option value="div">Division (/)</option>
+  </select>
+  <div id="edit-operation--description" class="description">
+    Select the operation you want to perform.
+  </div>
+</div>
+
+<input data-drupal-selector="edit-actions" type="submit" id="calculate_result" name="calculate_result" value="Calculate"
+       class="button js-form-submit form-submit" data-once="drupal-ajax">

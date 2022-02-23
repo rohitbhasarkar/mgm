@@ -1,0 +1,4 @@
+services:
+  student.myservices:
+    class: Drupal\student\MyServices
+    arguments: ['@messenger', '@http_client', '@string_translation']

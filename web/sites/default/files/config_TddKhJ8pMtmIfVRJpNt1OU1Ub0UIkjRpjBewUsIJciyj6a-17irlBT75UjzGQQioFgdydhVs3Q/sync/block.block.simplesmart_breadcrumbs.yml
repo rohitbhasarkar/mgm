@@ -1,0 +1,22 @@
+uuid: 2ae6d96b-3163-4568-bd60-ca781edc1041
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - simplesmart
+_core:
+  default_config_hash: y0bXRvKYQQKkf_RVxA3aOPGpIfKKsDOzzrWYCgjxJ9Y
+id: simplesmart_breadcrumbs
+theme: simplesmart
+region: content
+weight: -7
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,8 @@
+label: ' Registro de estudiantes'
+display:
+  default:
+    display_title: Defecto
+    display_options:
+      title: 'Registro de estudiantes'
+  student_page:
+    display_title: 'Registro de estudiantes'

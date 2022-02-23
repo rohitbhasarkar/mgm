@@ -1,0 +1,13 @@
+uuid: bf32740b-eeb3-4340-95ed-77fea56df100
+langcode: en
+status: true
+dependencies: {  }
+id: book_pdf
+label: 'Book PDF'
+description: "PDF Select for book.\r\n"
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_document
+field_map: {  }

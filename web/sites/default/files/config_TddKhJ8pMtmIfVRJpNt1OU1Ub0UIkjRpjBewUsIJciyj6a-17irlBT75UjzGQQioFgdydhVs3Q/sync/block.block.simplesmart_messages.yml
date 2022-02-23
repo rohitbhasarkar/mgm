@@ -1,0 +1,22 @@
+uuid: f3a9760d-ca68-43cd-bd97-272c9afda7d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - simplesmart
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: simplesmart_messages
+theme: simplesmart
+region: header
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

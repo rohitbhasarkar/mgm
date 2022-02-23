@@ -1,0 +1,14 @@
+uuid: e3f205dd-31b4-4070-953a-6bc57e5d9c53
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.demo
+  module:
+    - user
+id: user_remove_role_action.demo
+label: 'Remove the demo role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: demo

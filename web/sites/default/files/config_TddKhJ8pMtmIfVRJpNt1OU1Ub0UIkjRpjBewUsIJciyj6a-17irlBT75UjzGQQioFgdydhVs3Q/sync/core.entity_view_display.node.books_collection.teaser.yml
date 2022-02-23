@@ -1,0 +1,35 @@
+uuid: 9fdb3b05-d60b-43b7-88a7-8b5a003b3ab7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.books_collection.body
+    - field.field.node.books_collection.field_book_ima
+    - field.field.node.books_collection.field_choose_
+    - node.type.books_collection
+  module:
+    - text
+    - user
+id: node.books_collection.teaser
+targetEntityType: node
+bundle: books_collection
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_book_ima: true
+  field_choose_: true
+  langcode: true

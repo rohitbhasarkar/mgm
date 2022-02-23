@@ -1,0 +1,63 @@
+student.hello_form:
+  path: '/student/helloform'
+  defaults:
+    _form: 'Drupal\student\Form\HelloForm'
+    _title: 'Simple custom form example'
+  requirements:
+    _permission: 'access content'
+
+student.form:
+  path: '/student/myform'
+  defaults:
+    _title: 'Application form'
+    _form: '\Drupal\student\Form\ResumeForm'
+  requirements:
+    _permission: 'access content'
+
+student.actionfirstform:
+  path: '/actionfirstform'
+  defaults:
+    _title: 'Action First Form'
+    _form: '\Drupal\student\Form\ActionFirstForm'
+  requirements:
+    _access: 'TRUE'
+
+student.actionsecondform:
+  path: '/actionsecondform'
+  defaults:
+    _title: 'Action Second Form'
+    _form: '\Drupal\student\Form\ActionSecondForm'
+  requirements:
+    _access: 'TRUE'
+
+student.sessionfirstform:
+  path: '/sessionfirstform'
+  defaults:
+    _title: 'Session First Form'
+    _form: '\Drupal\student\Form\SessionFirstForm'
+  requirements:
+    _access: 'TRUE'
+
+student.sessionsecondform:
+  path: '/sessionsecondform'
+  defaults:
+    _title: 'Session Second Form'
+    _form: '\Drupal\student\Form\SessionSecondForm'
+  requirements:
+    _access: 'TRUE'
+
+student.configfirstform:
+  path: '/configfirstform'
+  defaults:
+    _title: 'Config First Form'
+    _form: '\Drupal\student\Form\ConfigFirstForm'
+  requirements:
+    _access: 'TRUE'
+
+student.configsecondform:
+  path: '/configsecondform'
+  defaults:
+    _title: 'Config Second Form'
+    _form: '\Drupal\student\Form\ConfigSecondForm'
+  requirements:
+    _access: 'TRUE'

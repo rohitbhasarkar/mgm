@@ -1,0 +1,29 @@
+uuid: 93df1f9c-7731-4004-b80e-0e1154143917
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_choose_
+    - media.type.book_pdf
+    - node.type.books_collection
+id: node.books_collection.field_choose_
+field_name: field_choose_
+entity_type: node
+bundle: books_collection
+label: 'Choose Book'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      book_pdf: book_pdf
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

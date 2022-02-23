@@ -1,0 +1,47 @@
+ajax_example.custom_form:
+  path: '/ajax_example/calculatorform'
+  defaults:
+    _form: 'Drupal\ajax_example\Form\CalculatorForm'
+    _title: 'AJAX Calculator'
+  requirements:
+    _permission: 'access content'
+
+ajax_example.content:
+  path: '/ajax_example/ajaxcontroller'
+  defaults:
+    _controller: '\Drupal\ajax_example\Controller\AjaxController::content'
+    _title: 'Ajax without Form.'
+  requirements:
+    _permission: 'access content'
+
+ajax_example.getname:
+  path: '/ajax_example/basiccontroller'
+  defaults:
+    _controller: '\Drupal\ajax_example\Controller\BasicController::getName'
+    _title: 'Simple Controller to get access class variable.'
+  requirements:
+    _permission: 'access content'
+
+ajax_example.traits:
+  path: '/ajax_example/traitcontroller'
+  defaults:
+    _controller: '\Drupal\ajax_example\Controller\TraitController::demoTrait'
+    _title: 'Trait Controller demo.'
+  requirements:
+    _permission: 'access content'
+
+ajax_example.template1:
+  path: '/ajax_example/my_template'
+  defaults:
+    _controller: '\Drupal\ajax_example\Controller\TemplateController::content'
+    _title: 'First Template rendering using Controller.'
+  requirements:
+    _permission: 'access content'
+
+ajax_example.template_second:
+  path: '/ajax_example/my_template_second'
+  defaults:
+    _controller: '\Drupal\ajax_example\Controller\TemplateController::secondTemplate'
+    _title: 'Second Template rendering using Controller.'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,20 @@
+name: Simple Smart classy version
+type: theme
+description: "A Sleek & practical theme for curious minds."
+core_version_requirement: ^8 || ^9
+core: 8.x
+base theme: classy
+screenshot: simplesmartscreenshot.png
+regions:
+  header: Header
+  simplesmartmenu: Navigation
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer
+libraries:
+  - simplesmart/global-css
+  - simplesmart/pacifico
+  - simplesmart/lato
+  - simplesmart/supermercado
+  - simplesmart/quintessential

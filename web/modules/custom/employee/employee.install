@@ -1,0 +1,50 @@
+<?php
+
+use Drupal\Core\Database\Database;
+
+/**
+ * Implements hook_schema().
+ */
+function employee_schema() {
+  $schema['employee'] = [
+    'description' => 'The table for storing the employee data.',
+    'fields' => [
+      'id' => [
+        'description' => 'The primary identifier for employee',
+        'type' => 'serial',
+        'not null' => TRUE,
+        'unsigned' => TRUE,
+      ],
+      'employee_name' => [
+        'description' => 'employee name',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'mobile_number' => [
+        'description' => 'Mobile number of employee',
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+      ],
+      'email_id' => [
+        'description' => 'Email ID',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'address' => [
+        'description' => 'Address of employee',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+  return $schema;
+}
+
+

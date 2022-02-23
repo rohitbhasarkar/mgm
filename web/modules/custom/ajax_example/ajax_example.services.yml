@@ -1,0 +1,3 @@
+services:
+  ajax_example.my_service:
+    class: Drupal\ajax_example\HelloServices

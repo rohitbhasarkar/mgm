@@ -1,0 +1,23 @@
+dev_module.helloworld:
+  path: '/hello_world'
+  defaults:
+    _controller: '\Drupal\dev_module\Controller\ModuleController::myData'
+    _title: 'First hello world'
+  requirements:
+    _permission: 'access content'
+
+dev_module.module_demo:
+  path: '/dev_module/demo_test'
+  defaults:
+    _controller: '\Drupal\dev_module\Controller\ModuleController::demoTemplate'
+    _title: 'Template rendering replacement of string.'
+  requirements:
+    _permission: 'access content'
+
+dev_module.demo_form:
+  path: '/dev_module/demo'
+  defaults:
+    _form: 'Drupal\dev_module\Form\DummyForm'
+    _title: 'Demo Form'
+  requirements:
+    _permission: 'access content'

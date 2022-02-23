@@ -1,0 +1,11 @@
+uuid: b2fabbe3-d63f-466e-81b1-fe3eb0e37a39
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.books_collection
+id: node.books_collection
+target_entity_type_id: node
+target_bundle: books_collection
+default_langcode: site_default
+language_alterable: false

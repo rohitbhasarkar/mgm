@@ -1,0 +1,21 @@
+accordion_menus:
+  main: main
+  admin: 0
+  devel: 0
+  footer: 0
+  tools: 0
+  account: 0
+accordion_menus_no_submenus:
+  admin: 0
+  devel: 0
+  footer: 0
+  main: 0
+  tools: 0
+  account: 0
+accordion_menus_default_closed:
+  main: main
+  admin: 0
+  devel: 0
+  footer: 0
+  tools: 0
+  account: 0

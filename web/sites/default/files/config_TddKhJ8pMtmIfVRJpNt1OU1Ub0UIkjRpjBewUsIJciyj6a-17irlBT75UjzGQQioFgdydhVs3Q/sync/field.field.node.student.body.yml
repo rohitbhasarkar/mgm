@@ -1,0 +1,25 @@
+uuid: 7ebb3f79-02f9-442b-82fe-36b70987a063
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.student
+  module:
+    - text
+_core:
+  default_config_hash: c4IrLyIwTotFd3KyzXu4QBK55g3Hyy1ENrB9iWBmUxA
+id: node.student.body
+field_name: body
+entity_type: node
+bundle: student
+label: 'Student Detail'
+description: 'More specific information about the student.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

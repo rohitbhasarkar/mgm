@@ -1,0 +1,49 @@
+uuid: 38bc4f92-80b3-4601-8124-035a7610731a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.band_members.body
+    - field.field.node.band_members.field_band_image
+    - field.field.node.band_members.field_instrument
+    - node.type.band_members
+  module:
+    - image
+    - text
+    - user
+id: node.band_members.default
+targetEntityType: node
+bundle: band_members
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_band_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_instrument:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

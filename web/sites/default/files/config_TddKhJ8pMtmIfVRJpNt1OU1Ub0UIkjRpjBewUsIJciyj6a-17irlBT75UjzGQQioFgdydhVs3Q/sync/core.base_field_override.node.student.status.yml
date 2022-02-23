@@ -1,0 +1,22 @@
+uuid: 916a2b04-7677-4005-825d-9e97e27c6a2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.student
+id: node.student.status
+field_name: status
+entity_type: node
+bundle: student
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
